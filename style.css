@@ -1,0 +1,256 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    background: rgb(49,132,204);
+    background: linear-gradient(65deg, rgba(49,132,204,1) 0%, rgba(22,73,110,1) 56%, rgba(5,41,68,1) 100%);
+}
+
+.container{
+    width: 800px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* border: 1px solid red; */
+}
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 20px;
+    color: rgb(244, 236, 236);
+}
+
+.tab-container{
+    width: 100%;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4rem;
+    padding: 0 20px;
+    
+}
+.tab{
+    cursor: pointer;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 1.75px;
+}
+
+
+
+
+
+
+
+.weather-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-block: 4rem;
+}
+
+.grant-location-container{
+
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    display: none;
+
+}
+.grant-location-container.active{
+    
+    display: flex;
+/* 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; */
+}
+
+.grantLocationHead{
+    font-size: 1.35rem;
+    color: white;
+    letter-spacing: 1.3px;
+    font-weight: bolder;
+}
+.grantLocationText{
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.655);
+}
+.btn{
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background-color: rgba(175, 154, 154, 0.304);
+    cursor: pointer;
+    padding: 10px 30px;
+    color: white;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+.btn:hover{
+    background-color: rgba(175, 154, 154, 0.558);;
+}
+
+
+.loading-container{
+    display: none;
+
+    width: 100%;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+.loading-container.active{
+
+    display: flex;
+    /* flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px; */
+
+}
+.loading-container p{
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.589);
+    font-weight: 900;
+}
+
+
+
+.user-info-container{
+    display: none;
+
+
+
+    /* display: flex; */
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+} 
+
+.user-info-container.active{
+    display: flex;
+
+
+    /* flex-direction: column;
+    margin-top: 30px;
+    gap: 25px;
+    justify-content: center;
+    align-items: center; */
+}
+
+.user-info-container .name{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+
+}
+.user-info-container .name p{
+    color: white;
+    font-size: 1.55rem;
+    font-weight: bold;
+}
+.user-info-container .name img{
+    width: 30px;
+    height: 30px;
+}
+.weatherDesc{
+    color: rgba(255, 255, 255, 0.823); 
+}
+.weatherIcon{
+    width: 60px;
+    height: 60px;
+}
+.temp{
+    font-size: 2rem;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+}
+.parameter-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.parameter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: rgba(255, 255, 255, 0.89);
+    font-weight: 600;
+    font-size: 1.25rem;
+    background-color: rgba(219, 226, 239, 0.5);
+    padding: 25px;
+    width: 150px;
+    border-radius: 20px;
+}
+.parameter img{
+    width: 60px;
+    height: 60px;
+}
+
+
+.form-container{
+    display: none;
+
+    /* display: flex; */
+
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.form-container.active{
+    display: flex;
+    
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; */
+}
+.form-container input{
+    /* width: 0%; */
+    width: 330px;
+    height: 42px;
+    border-radius: 4px;
+
+    font-size: 0.95rem;
+    border-radius: 5px;
+    background-color: rgba(175, 154, 154, 0.304);
+    padding: 10px 30px;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+
+.current-tab{
+    background-color: rgba(219, 226, 239, 0.5);
+    border-radius: 4px;
+    padding: 4px;
+}
